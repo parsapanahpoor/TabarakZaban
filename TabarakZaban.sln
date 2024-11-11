@@ -9,15 +9,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{49EBF688-2EB9-4D9F-AC0C-4A9176593A0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Domain.DependencyInjection", "src\Framework\Domain\Framework.Domain.DependencyInjection\Framework.Domain.DependencyInjection.csproj", "{4E70A57A-F776-423E-B847-8D7846860804}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Domain.DependencyInjection", "src\Framework\Domain\Framework.Domain.DependencyInjection\Framework.Domain.DependencyInjection.csproj", "{4E70A57A-F776-423E-B847-8D7846860804}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B7A2384C-3F58-4613-BECC-324523B30E7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedProject", "src\Shared\SharedProject\SharedProject.csproj", "{0FCD7CB6-A39B-473D-911D-2383A55236EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedProject", "src\Shared\SharedProject\SharedProject.csproj", "{0FCD7CB6-A39B-473D-911D-2383A55236EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Domain.Abstraction", "src\Framework\Domain\Framework.Domain.Abstraction\Framework.Domain.Abstraction.csproj", "{F7423093-6983-4206-AA91-B8B259A04FF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Domain.Abstraction", "src\Framework\Domain\Framework.Domain.Abstraction\Framework.Domain.Abstraction.csproj", "{F7423093-6983-4206-AA91-B8B259A04FF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Domain.Shared", "src\Framework\Domain\Framework.Domain.Shared\Framework.Domain.Shared.csproj", "{56EEECAF-4255-465B-8771-5ADE5D73B474}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Domain.Shared", "src\Framework\Domain\Framework.Domain.Shared\Framework.Domain.Shared.csproj", "{56EEECAF-4255-465B-8771-5ADE5D73B474}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{9C1B96D6-65A0-44D1-8D00-5F92BA31CFE2}"
+	ProjectSection(SolutionItems) = preProject
+		BannedSymbols.txt = BannedSymbols.txt
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
