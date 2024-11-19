@@ -34,6 +34,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Application.Share
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Application.Abstraction", "src\Framework\Application\Framework.Application.Abstraction\Framework.Application.Abstraction.csproj", "{D93CD761-5C6A-47F9-A6D5-DC9B52740A57}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A2AA8669-1C67-4804-A37A-7125D418353C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{88B523B8-26CA-4704-BCC6-8E0E043A8665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Infrastructure.Shared", "src\Framework\Infrastructure\Framework.Infrastructure.Shared\Framework.Infrastructure.Shared.csproj", "{D0CCE9AD-F77E-45A3-928B-A55B815E853E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Persistence.DependencyInjection", "src\Framework\Infrastructure\Persistence\Framework.Persistence.DependencyInjection\Framework.Persistence.DependencyInjection.csproj", "{DDC57E99-2E09-4657-95AA-B69C214DDA91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Persistence.Context", "src\Framework\Infrastructure\Persistence\Framework.Persistence.Context\Framework.Persistence.Context.csproj", "{FBC8D209-9E7C-4623-8D62-141EA1B614F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Persistence.Shared", "src\Framework\Infrastructure\Persistence\Framework.Persistence.Shared\Framework.Persistence.Shared.csproj", "{D9952B4E-5713-4D3D-A08A-1C82169178C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +80,22 @@ Global
 		{D93CD761-5C6A-47F9-A6D5-DC9B52740A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D93CD761-5C6A-47F9-A6D5-DC9B52740A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D93CD761-5C6A-47F9-A6D5-DC9B52740A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0CCE9AD-F77E-45A3-928B-A55B815E853E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CCE9AD-F77E-45A3-928B-A55B815E853E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CCE9AD-F77E-45A3-928B-A55B815E853E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CCE9AD-F77E-45A3-928B-A55B815E853E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC57E99-2E09-4657-95AA-B69C214DDA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC57E99-2E09-4657-95AA-B69C214DDA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC57E99-2E09-4657-95AA-B69C214DDA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC57E99-2E09-4657-95AA-B69C214DDA91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC8D209-9E7C-4623-8D62-141EA1B614F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC8D209-9E7C-4623-8D62-141EA1B614F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC8D209-9E7C-4623-8D62-141EA1B614F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC8D209-9E7C-4623-8D62-141EA1B614F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9952B4E-5713-4D3D-A08A-1C82169178C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9952B4E-5713-4D3D-A08A-1C82169178C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9952B4E-5713-4D3D-A08A-1C82169178C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9952B4E-5713-4D3D-A08A-1C82169178C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +112,12 @@ Global
 		{494C942C-997C-4311-B3A5-3DD19D412551} = {0C8A77B2-6714-4548-9884-1D9DB40AEE3C}
 		{47ACBC06-3847-4DBA-9349-B29BBDF83DBC} = {0C8A77B2-6714-4548-9884-1D9DB40AEE3C}
 		{D93CD761-5C6A-47F9-A6D5-DC9B52740A57} = {0C8A77B2-6714-4548-9884-1D9DB40AEE3C}
+		{A2AA8669-1C67-4804-A37A-7125D418353C} = {A1200CA2-A0CE-4E65-882D-7EFAC47867D4}
+		{88B523B8-26CA-4704-BCC6-8E0E043A8665} = {A2AA8669-1C67-4804-A37A-7125D418353C}
+		{D0CCE9AD-F77E-45A3-928B-A55B815E853E} = {A2AA8669-1C67-4804-A37A-7125D418353C}
+		{DDC57E99-2E09-4657-95AA-B69C214DDA91} = {88B523B8-26CA-4704-BCC6-8E0E043A8665}
+		{FBC8D209-9E7C-4623-8D62-141EA1B614F3} = {88B523B8-26CA-4704-BCC6-8E0E043A8665}
+		{D9952B4E-5713-4D3D-A08A-1C82169178C6} = {88B523B8-26CA-4704-BCC6-8E0E043A8665}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5E7DE86-D3DB-4893-B001-56CECFAB18D5}
