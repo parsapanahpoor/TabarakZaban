@@ -7,10 +7,10 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="FluentValidation" Version="11.10.0" />
-		<PackageReference Include="MediatR" Version="12.4.1" />
+		<PackageReference Include="FluentValidation" />
+		<PackageReference Include="MediatR" />
 	</ItemGroup>
-
+	
 	<ItemGroup>
 	  <ProjectReference Include="..\..\..\Shared\SharedProject\SharedProject.csproj" />
 	</ItemGroup>
