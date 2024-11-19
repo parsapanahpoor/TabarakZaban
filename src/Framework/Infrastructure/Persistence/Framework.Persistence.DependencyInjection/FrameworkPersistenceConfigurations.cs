@@ -6,8 +6,6 @@ using Framework.Persistence.Context.UnitOfWork;
 using System.Reflection;
 using Identity.Persistence;
 using Identity.Infrastructure;
-using Organization.Persistence;
-using BaseInformation._Persistence;
 
 namespace Framework.Persistence.DependencyInjection;
 
@@ -15,9 +13,7 @@ public static class FrameworkPersistenceConfigurations
 {
     public static readonly Assembly[] Assemblies =
     [
-        IdentityPersistenceAssemblyReference.Assembly,
-        OrganizationPersistenceAssemblyReference.Assembly,
-        BaseInformationPersistenceAssemblyReference.Assembly,
+        IdentityPersistenceAssemblyReference.Assembly
     ];
 
     public static IServiceCollection RegisterPersistenceLayer(this IServiceCollection services, Action<DbContextOptionsBuilder>? optionsAction)

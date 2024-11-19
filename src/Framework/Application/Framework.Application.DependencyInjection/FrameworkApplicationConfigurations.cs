@@ -1,4 +1,6 @@
 ﻿using FluentValidation;
+using Framework.Application.Shared.Behavior;
+using Identity.Application;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -8,7 +10,7 @@ public static class FrameworkApplicationConfigurations
 {
     public static readonly Assembly[] Assemblies =
     [
-        //IdentityApplicationAssemblyReference.Assembly,
+        IdentityApplicationAssemblyReference.Assembly,
     ];
 
     public static IServiceCollection RegisterApplicationLayer(this IServiceCollection services)
@@ -16,14 +18,14 @@ public static class FrameworkApplicationConfigurations
         foreach (var assembly in Assemblies)
         {
             services.AddValidatorsFromAssembly(assembly);
-            //services.AddMediatR(config =>
-            //{
-            //    config.RegisterServicesFromAssembly(assembly);
-            //    config.AddOpenBehavior(typeof(ValidationPipelineBehavior<,>));
-            //});
+            services.AddMediatR(config =>
+            {
+                config.RegisterServicesFromAssembly(assembly);
+                config.AddOpenBehavior(typeof(ValidationPipelineBehavior<,>));
+            });
         }
 
-        //services.AddAutoMapper(Assemblies);
+        services.AddAutoMapper(Assemblies);
         return services;
     }
 

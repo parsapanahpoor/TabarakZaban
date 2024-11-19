@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\Framework\Infrastructure\Framework.Infrastructure.Shared\Framework.Infrastructure.Shared.csproj" />
+		<ProjectReference Include="..\Identity.Application\Identity.Application.csproj" />
+	</ItemGroup>
+	
+</Project>

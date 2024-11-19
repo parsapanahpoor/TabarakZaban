@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Identity" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\Framework\Application\Framework.Application.Abstraction\Framework.Application.Abstraction.csproj" />
+		<ProjectReference Include="..\..\..\Framework\Application\Framework.Application.Shared\Framework.Application.Shared.csproj" />
+		<ProjectReference Include="..\..\..\Framework\Domain\Framework.Domain.Abstraction\Framework.Domain.Abstraction.csproj" />
+		<ProjectReference Include="..\Identity.Domain\Identity.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="User\Queries\" />
+	</ItemGroup>
+	
+</Project>

@@ -22,6 +22,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\Module\IdentityModule\Identity.Persistence\Identity.Persistence.csproj" />
 		<ProjectReference Include="..\..\..\Application\Framework.Application.Abstraction\Framework.Application.Abstraction.csproj" />
 		<ProjectReference Include="..\..\..\Domain\Framework.Domain.Abstraction\Framework.Domain.Abstraction.csproj" />
 	</ItemGroup>

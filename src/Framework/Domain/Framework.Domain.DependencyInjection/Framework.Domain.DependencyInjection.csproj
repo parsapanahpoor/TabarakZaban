@@ -10,5 +10,9 @@
 		<PackageReference Include="NetCore.AutoRegisterDi" />
 		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Module\IdentityModule\Identity.Domain\Identity.Domain.csproj" />
+	</ItemGroup>
 	
 </Project>

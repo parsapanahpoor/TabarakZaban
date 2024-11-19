@@ -12,6 +12,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\Module\IdentityModule\Identity.Infrastructure\Identity.Infrastructure.csproj" />
 		<ProjectReference Include="..\..\..\Application\Framework.Application.Abstraction\Framework.Application.Abstraction.csproj" />
 		<ProjectReference Include="..\Framework.Persistence.Context\Framework.Persistence.Context.csproj" />
 	</ItemGroup>

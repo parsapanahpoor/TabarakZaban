@@ -15,6 +15,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\Module\IdentityModule\Identity.Core\Identity.Core.csproj" />
 		<ProjectReference Include="..\..\Application\Framework.Application.Shared\Framework.Application.Shared.csproj" />
 	</ItemGroup>
 	

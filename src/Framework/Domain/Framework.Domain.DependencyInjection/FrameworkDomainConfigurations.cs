@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using FluentValidation;
+using Identity.Domain;
 using Microsoft.Extensions.DependencyInjection;
 using NetCore.AutoRegisterDi;
 
@@ -9,7 +10,7 @@ public static class FrameworkDomainConfigurations
 {
 	public static readonly Assembly[] Assemblies =
 	[
-		//IdentityDomainAssemblyReference.Assembly,
+		IdentityDomainAssemblyReference.Assembly,
 	];
 
 	public static IServiceCollection RegisterDomainLayer(this IServiceCollection services)
@@ -23,7 +24,7 @@ public static class FrameworkDomainConfigurations
 			services.AddValidatorsFromAssembly(assembly);
 		}
 
-		//services.AddAutoMapper(Assemblies);
+		services.AddAutoMapper(Assemblies);
 		return services;
 	}
 

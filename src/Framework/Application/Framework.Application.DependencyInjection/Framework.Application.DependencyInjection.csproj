@@ -12,5 +12,9 @@
 		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
 		<PackageReference Include="System.Configuration.ConfigurationManager" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Module\IdentityModule\Identity.Application\Identity.Application.csproj" />
+	</ItemGroup>
 	
 </Project>
