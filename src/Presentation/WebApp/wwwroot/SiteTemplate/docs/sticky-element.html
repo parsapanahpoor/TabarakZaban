@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+	<title>Eduport - قالب HTML دوره آنلاین و آموزش</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="">
+	<meta name="description" content="Eduport - قالب HTML دوره آنلاین و آموزش">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/doc.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/prism.css">
+
+</head>
+
+<body>
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+<!-- Navbar top START -->
+<div class="navbar-top bg-dark px-3 px-sm-4 px-md-5">
+	<div class="d-flex justify-content-between align-items-center">
+		<!-- Logo START -->
+			<a class="navbar-brand py-3" href="index.html">
+				<img class="navbar-brand-item h-30px" src="assets/images/logo-light.svg" alt="logo">				
+			</a>
+			<!-- Logo END -->
+
+		<!-- Navbar right -->
+		<div>
+			<ul class="text-end list-inline m-0">
+        <li class="list-inline-item me-2 me-md-4"> <a class="text-white" href="../index.html">مشاهده سایت</a> </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Navbar top END -->
+
+<div class="container-fluid px-0">
+	<div class="page-wrapper">
+		<!-- Left sidebar START -->
+		<nav class="navbar navbar-expand-sm navbar-light bg-light px-3">
+			<a class="navbar-brand py-2 d-sm-none" href="#">منو</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#docNav" aria-controls="docNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="docNav">
+				<div class="left-sidebar bg-light">
+					<div class="content custom-scrollbar h-100">
+						<div class="list-group list-group-borderless p-3 p-md-4">
+							<b class="text-dark text-uppercase mb-2">شروع</b>
+								<a class="list-group-item" href="index.html">توضیحات</a>
+								<a class="list-group-item" href="logo-settings.html">تنظیمات لوگو</a>
+								<a class="list-group-item" href="page-loading.html">لودینگ صفحه</a>
+								<a class="list-group-item" href="dark-mode.html">نسخه تیره</a>
+								<a class="list-group-item" href="sources-and-credits.html">منابع</a>
+							<b class="text-dark text-uppercase mt-3 mb-2">کدهای آماده</b>
+								<a class="list-group-item" href="alerts.html">هشدارها</a>
+								<a class="list-group-item" href="avatar.html">آواتار</a>
+								<a class="list-group-item" href="badges.html">نشان ها</a>
+								<a class="list-group-item" href="breadcrumb.html">مسیر راهنما</a>
+								<a class="list-group-item" href="buttons.html">دکمه ها</a>
+								<a class="list-group-item" href="card.html">باکس متن (Card)</a>
+								<a class="list-group-item" href="font-icons.html">فونت آیکُن</a>
+								<a class="list-group-item" href="google-map.html">گوگل مپ</a>
+								<a class="list-group-item" href="nav-and-tabs.html">منو و تب</a>
+								<a class="list-group-item" href="pagination.html">صفحه بندی</a>
+								<a class="list-group-item" href="progress.html">نوار پیشرفت</a>
+								<a class="list-group-item" href="sticky-element.html">المان Sticky</a> 
+								<a class="list-group-item" href="utility-classes.html">کلاس های کاربردی</a>
+							<b class="text-dark text-uppercase mt-3 mb-2">پلاگین ها</b>
+								<a class="list-group-item" href="tiny-slider.html">اسلایدر Tiny</a>
+								<a class="list-group-item" href="video-player.html">Video player</a>
+								<a class="list-group-item" href="choices.html">انتخاب های چندگانه</a>
+								<a class="list-group-item" href="flatpickr.html">Flatpickr</a>
+						</div>
+					</div>
+				</div>
+		  </div>
+		</nav>		
+		<!-- Left sidebar END -->
+
+		<!-- Main content START -->
+		<div class="main-content">
+			<div class="row">
+				<div class="col-12">
+					<!-- Page title -->
+					<div class="my-5">
+						<h1 class="h3">المان Sticky</h1>
+						<hr>
+					</div>
+<!-- Page content START -->
+
+<p>شما می توانید به راحتی هر عنصر را با اضافه کردن دو کد زیر به Sticky تبدیل کنید:</p>
+<ol class="pe-lg-3">
+	<li><code>data-sticky</code> به فرزند باید داده شود.</li>
+	<li><code>data-sticky-container</code> به والد باید داده شود.</li>
+</ol>
+
+<div class="position-relative">
+<pre id="copy-1" class="my-3">
+<code class="language-markup" data-lang="html">
+&lt;section&gt;
+	&lt;div class="container" data-sticky-container&gt;
+		&lt;div class="row"&gt;
+			&lt;!-- Sidebar START --&gt;
+			&lt;div class="col-md-4"&gt;
+				&lt;div data-sticky data-margin-top="80" data-sticky-for="768"&gt;
+					المان های موجود در سایدبار
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;!-- Sidebar END --&gt;
+
+			&lt;div class="col-md-8"&gt;
+				...
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+</code>
+</pre>
+<button id="copy_id-1" data-clipboard-action="copy" data-clipboard-target="#copy-1" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+
+<h4 class="mt-5">پلاگین موردنیاز: </h4>
+	<p class="mt-3">اسکریپت زیر را بعد از <code>bootstrap.bundle.min.js</code> در انتهای صفحه خود کپی کنید تا فعال شود.</p>
+	<div class="position-relative">
+<pre id="copy-3" class="my-3">
+<code class="language-markup" data-lang="html">
+&lt;script src="assets/vendor/sticky-js/sticky.min.js"&gt;&lt;/script&gt;
+</code>
+</pre>
+	<button id="copy_id-3" data-clipboard-action="copy" data-clipboard-target="#copy-3" class="copy-link btn btn-primary btn-sm">کپی</button>
+	</div>
+
+ 
+<!-- Page content END -->	
+				</div>
+			</div>
+		</div>
+		<!-- Main content END -->
+	</div>
+</div>
+</main>
+
+<!-- =======================
+JavaScripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/simple-scrollbar.min.js"></script>
+<script src="assets/js/prism.js"></script>
+<script src="assets/js/clipboard.min.js"></script>
+ 
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+</html>

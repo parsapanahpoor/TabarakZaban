@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+	<title>Eduport - قالب HTML دوره آنلاین و آموزش</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="">
+	<meta name="description" content="Eduport - قالب HTML دوره آنلاین و آموزش">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/doc.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/prism.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/css/flatpickr.min.css">
+
+</head>
+
+<body>
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+<!-- Navbar top START -->
+<div class="navbar-top bg-dark px-3 px-sm-4">
+	<div class="d-flex justify-content-between align-items-center">
+		<!-- Logo START -->
+			<a class="navbar-brand py-3" href="index.html">
+				<img class="navbar-brand-item h-30px" src="assets/images/logo-light.svg" alt="logo">				
+			</a>
+			<!-- Logo END -->
+
+		<!-- Navbar right -->
+		<div>
+			<ul class="text-end list-inline m-0">
+				<li class="list-inline-item me-2 me-md-4"> <a class="text-white" href="../index.html">مشاهده سایت</a> </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Navbar top END -->
+
+<div class="container-fluid px-0">
+	<div class="page-wrapper">
+		<!-- Left sidebar START -->
+		<nav class="navbar navbar-expand-sm navbar-light bg-light px-3">
+			<a class="navbar-brand py-2 d-sm-none" href="#">منو</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#docNav" aria-controls="docNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="docNav">
+				<div class="left-sidebar bg-light">
+					<div class="content custom-scrollbar h-100">
+						<div class="list-group list-group-borderless p-3 p-md-4">
+							<b class="text-dark text-uppercase mb-2">شروع</b>
+								<a class="list-group-item" href="index.html">توضیحات</a>
+								<a class="list-group-item" href="logo-settings.html">تنظیمات لوگو</a>
+								<a class="list-group-item" href="page-loading.html">لودینگ صفحه</a>
+								<a class="list-group-item" href="dark-mode.html">نسخه تیره</a>
+								<a class="list-group-item" href="sources-and-credits.html">منابع</a>
+							<b class="text-dark text-uppercase mt-3 mb-2">کدهای آماده</b>
+								<a class="list-group-item" href="alerts.html">هشدارها</a>
+								<a class="list-group-item" href="avatar.html">آواتار</a>
+								<a class="list-group-item" href="badges.html">نشان ها</a>
+								<a class="list-group-item" href="breadcrumb.html">مسیر راهنما</a>
+								<a class="list-group-item" href="buttons.html">دکمه ها</a>
+								<a class="list-group-item" href="card.html">باکس متن (Card)</a>
+								<a class="list-group-item" href="font-icons.html">فونت آیکُن</a>
+								<a class="list-group-item" href="google-map.html">گوگل مپ</a>
+								<a class="list-group-item" href="nav-and-tabs.html">منو و تب</a>
+								<a class="list-group-item" href="pagination.html">صفحه بندی</a>
+								<a class="list-group-item" href="progress.html">نوار پیشرفت</a>
+								<a class="list-group-item" href="sticky-element.html">المان Sticky</a> 
+								<a class="list-group-item" href="utility-classes.html">کلاس های کاربردی</a>
+							<b class="text-dark text-uppercase mt-3 mb-2">پلاگین ها</b>
+								<a class="list-group-item" href="tiny-slider.html">اسلایدر Tiny</a>
+								<a class="list-group-item" href="video-player.html">Video player</a>
+								<a class="list-group-item" href="choices.html">انتخاب های چندگانه</a>
+								<a class="list-group-item" href="flatpickr.html">Flatpickr</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>		
+		<!-- Left sidebar END -->
+
+		<!-- Main content START -->
+		<div class="main-content">
+			<div class="row">
+				<div class="col-12">
+					<!-- Page title -->
+					<div class="my-5">
+						<h1 class="h3">Flatpickr</h1>
+						<hr>
+					</div>
+
+	<h5 class="mt-5">مثال ها</h5>
+	<!-- Tab START -->
+<ul class="nav nav-tabs nav-tabs-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-1">نتیجه</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-2">HTML</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-3">پلاگین ها</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-1">
+		<label class="form-label">انتخاب تاریخ</label>
+		<input type="text" class="form-control flatpickr" placeholder="انتخاب تاریخ" data-date-format="d M Y">
+	</div>
+
+	<div class="tab-pane" id="tab-2">
+<div class="position-relative">
+<pre id="copy-1" class="my-3">
+<code class="language-markup" data-lang="html">&lt;label class="form-label"&gt;انتخاب تاریخ&lt;/label&gt;
+&lt;input type="text" class="form-control flatpickr" placeholder="انتخاب تاریخ" data-date-format="d M Y"&gt;
+</code></pre>
+<button id="copy_id-1" data-clipboard-action="copy" data-clipboard-target="#copy-1" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+</div>
+
+<div class="tab-pane" id="tab-3">
+<!-- Css link -->
+<div>
+	<p>شما باید تگ <code>&lt;link&gt;</code> زیر را بین تگ <code>&lt;head&gt;</code> بعد از فایل های css خود paste کنید.</p>
+	<div class="position-relative">
+		<pre id="copy-c1" class="">
+			<code class="language-markup" data-lang="html">
+&lt;link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/css/flatpickr.min.css"&gt;
+				</code></pre>
+		<button id="copy_id-c1" data-clipboard-action="copy" data-clipboard-target="#copy-c1" class="copy-link btn btn-primary btn-sm mb-0">کپی</button>
+	</div>
+</div>
+
+<!-- Script link  -->
+<div class="mt-4">
+	<p>همچنین بین تگ <code>&lt;script&gt;</code> پلاگین flatpickr در پوشه ی <b>Vendors</b> را باید paste کنید.</p>
+	<div class="position-relative">
+		<pre id="copy-s1" class="">
+			<code class="language-markup" data-lang="html">
+&lt;script src="assets/vendor/flatpickr/js/flatpickr.min.js"&gt;&lt;/script&gt;
+			</code></pre>
+		<button id="copy_id-s1" data-clipboard-action="copy" data-clipboard-target="#copy-s1" class="copy-link btn btn-primary btn-sm mb-0">کپی</button>
+	</div>
+</div>
+</div>
+
+
+</div>
+<!-- Tab END -->
+
+
+<p class="mt-4">نحوه استفاده:</p>
+
+<div class="position-relative">
+<pre id="copy-1" class="my-3">
+<code class="language-markup" data-lang="html">
+&lt;!-- Single --&gt;
+&lt;input type="text" class="form-control flatpickr" placeholder="انتخاب تاریخ"&gt;
+
+&lt;!-- Multiple --&gt;
+&lt;input type="text" class="form-control flatpickr" data-mode="multiple" placeholder="انتخاب تاریخ"&gt;
+
+&lt;!-- Range --&gt;
+&lt;input type="text" class="form-control flatpickr" data-mode="range" placeholder="انتخاب تاریخ"&gt;
+
+&lt;!-- Enable Time with no calendar --&gt;
+&lt;input type="text" class="form-control flatpickr" data-enableTime="true" data-noCalendar="true" placeholder="انتخاب زمان"&gt;
+
+&lt;!-- Inline --&gt;
+&lt;input type="text" class="form-control flatpickr" data-inline="true" placeholder="انتخاب تاریخ"&gt;
+
+&lt;!-- Date formate --&gt;
+&lt;input type="text" class="form-control flatpickr" data-date-format="d/M/Y" placeholder="انتخاب تاریخ"&gt;
+</code>
+</pre>
+<button id="copy_id-1" data-clipboard-action="copy" data-clipboard-target="#copy-1" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+<p class="mt-5">ویژگی های دیگر این قابلیت به همراه توضیحات آن در جدول زیر ارائه شده است:</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>نام Attributes</th>
+        <th>توضیحات</th>
+        <th>سایر ویژگی ها</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- table row -->
+      <tr>
+        <td dir="ltr">data-enableTime="true"</td>
+        <td>فعال یا غیرفعال کردن تقویم</td>
+        <td class="text-start">Boolean (true or false)</td>
+      </tr>
+      <!-- table row -->
+      <tr>
+        <td dir="ltr">data-noCalendar="true"</td>
+        <td>فعال یا غیرفعال کردن تقویم</td>
+        <td class="text-start">Boolean (true or false)</td>
+      </tr>
+      <!-- table row -->
+      <tr>
+        <td dir="ltr">data-mode="mode"</td>
+        <td>تنظیم حالت تاریخ</td>
+        <td class="text-start">"range" | "single"</td>
+      </tr>
+      <!-- table row -->
+      <tr>
+        <td dir="ltr">data-inline="true"</td>
+        <td></td>
+        <td class="text-start">Boolean (true or false)</td>
+      </tr>
+      <!-- table row -->
+      <tr>
+        <td dir="ltr">data-date-format="d M"</td>
+        <td>تعیین فرمت تاریخ و زمان</td>
+        <td class="text-start">"d M" | "d M Y" | "h:i K"</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="mt-5">کسب اطلاعات بیشتر در سایت رسمی<a target="_blank" href="https://flatpickr.js.org/examples/"> flatpickr</a></p>
+
+
+<!-- Page content END -->	
+				</div>
+			</div>
+		</div>
+		<!-- Main content END -->
+	</div>
+</div>
+</main>
+
+<!-- =======================
+JavaScripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/simple-scrollbar.min.js"></script>
+<script src="assets/js/prism.js"></script>
+<script src="assets/js/clipboard.min.js"></script>
+<script src="assets/vendor/flatpickr/js/jdate.min.js"></script>
+<script src="assets/vendor/flatpickr/js/flatpickr.min.js"></script>
+<script src="assets/vendor/flatpickr/js/fa.js"></script>
+
+ 
+<!-- ThemeFunctions -->
+<script src="assets/js/functions.js"></script>
+<script>
+window.Date=window.JDate;
+flatpickr(".flatpickr", {
+        "locale": "fa" 
+    });
+	</script>
+</body>
+
+</html>

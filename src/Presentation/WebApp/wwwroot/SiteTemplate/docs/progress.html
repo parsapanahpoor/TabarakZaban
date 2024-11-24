@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+	<title>Eduport - قالب HTML دوره آنلاین و آموزش</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="">
+	<meta name="description" content="Eduport - قالب HTML دوره آنلاین و آموزش">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/doc.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/prism.css">
+
+</head>
+
+<body>
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+<!-- Navbar top START -->
+<div class="navbar-top bg-dark px-3 px-sm-4 px-md-5">
+	<div class="d-flex justify-content-between align-items-center">
+		<!-- Logo START -->
+			<a class="navbar-brand py-3" href="index.html">
+				<img class="navbar-brand-item h-30px" src="assets/images/logo-light.svg" alt="logo">				
+			</a>
+			<!-- Logo END -->
+
+		<!-- Navbar right -->
+		<div>
+			<ul class="text-end list-inline m-0">
+        <li class="list-inline-item me-2 me-md-4"> <a class="text-white" href="../index.html">مشاهده سایت</a> </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Navbar top END -->
+
+<div class="container-fluid px-0">
+	<div class="page-wrapper">
+		<!-- Left sidebar START -->
+		<nav class="navbar navbar-expand-sm navbar-light bg-light px-3">
+			<a class="navbar-brand py-2 d-sm-none" href="#">منو</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#docNav" aria-controls="docNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="docNav">
+				<div class="left-sidebar bg-light">
+					<div class="content custom-scrollbar h-100">
+						<div class="list-group list-group-borderless p-3 p-md-4">
+							<b class="text-dark text-uppercase mb-2">شروع</b>
+								<a class="list-group-item" href="index.html">توضیحات</a>
+								<a class="list-group-item" href="logo-settings.html">تنظیمات لوگو</a>
+								<a class="list-group-item" href="page-loading.html">لودینگ صفحه</a>
+								<a class="list-group-item" href="dark-mode.html">نسخه تیره</a>
+								<a class="list-group-item" href="sources-and-credits.html">منابع</a>
+							<b class="text-dark text-uppercase mt-3 mb-2">کدهای آماده</b>
+								<a class="list-group-item" href="alerts.html">هشدارها</a>
+								<a class="list-group-item" href="avatar.html">آواتار</a>
+								<a class="list-group-item" href="badges.html">نشان ها</a>
+								<a class="list-group-item" href="breadcrumb.html">مسیر راهنما</a>
+								<a class="list-group-item" href="buttons.html">دکمه ها</a>
+								<a class="list-group-item" href="card.html">باکس متن (Card)</a>
+								<a class="list-group-item" href="font-icons.html">فونت آیکُن</a>
+								<a class="list-group-item" href="google-map.html">گوگل مپ</a>
+								<a class="list-group-item" href="nav-and-tabs.html">منو و تب</a>
+								<a class="list-group-item" href="pagination.html">صفحه بندی</a>
+								<a class="list-group-item" href="progress.html">نوار پیشرفت</a>
+								<a class="list-group-item" href="sticky-element.html">المان Sticky</a> 
+								<a class="list-group-item" href="utility-classes.html">کلاس های کاربردی</a>
+							<b class="text-dark text-uppercase mt-3 mb-2">پلاگین ها</b>
+								<a class="list-group-item" href="tiny-slider.html">اسلایدر Tiny</a>
+								<a class="list-group-item" href="video-player.html">Video player</a>
+								<a class="list-group-item" href="choices.html">انتخاب های چندگانه</a>
+								<a class="list-group-item" href="flatpickr.html">Flatpickr</a>
+						</div>
+					</div>
+				</div>
+		  </div>
+		</nav>		
+		<!-- Left sidebar END -->
+
+		<!-- Main content START -->
+		<div class="main-content">
+			<div class="row">
+				<div class="col-12">
+					<!-- Page title -->
+					<div class="my-5">
+						<h1 class="h3">نوار پیشرفت</h1>
+						<hr>
+					</div>
+<!-- Page content START -->
+
+
+<!-- How it works -->
+<h4 class="mt-5">توضیحات</h4>
+<p>نمونه هایی برای نمایش صفحه بندی برای نشان دادن یک سری محتوای مرتبط در چندین صفحه وجود دارد.</p>
+
+<p>علاوه بر این، از آنجایی که صفحات امکان دارد بیش از یک بخش داشته باشد، توصیه می‌شود یک برچسب <code>aria-label</code> برای <code>&lt;nav&gt;</code> ارائه شود تا هدف آن را منعکس کند به عنوان مثال، صفحه بندی ای برای پیمایش بین مجموعه ای از نتایج جستجو باید،یک برچسب مناسب مثلا <code>aria-label="Search results pages"</code> استفاده شود.</p>
+<ul class="nav nav-tabs nav-tabs-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-1">نتیجه</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-2">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-1">
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-2">
+<div class="position-relative">
+<pre id="copy-1" class="my-3">
+<code class="language-markup" data-lang="html">&lt;div class="progress"&gt;
+&lt;div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-1" data-clipboard-action="copy" data-clipboard-target="#copy-1" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Labels Examples -->
+<h4 class="mt-5">با Label</h4>
+<p>افزودن عنوان یا متن دلخواه روی المانی با کلاس <code>.progress-bar</code></p>
+
+<!-- Tab START -->
+<ul class="nav nav-tabs nav-tabs-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-9">نتیجه</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-10">HTML</a> </li>
+</ul>
+		<!--  -->
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-9">
+		<div class="progress">
+		  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-10">
+<div class="position-relative">
+<pre id="copy-5" class="my-3">
+<code class="language-markup" data-lang="html">&lt;div class="progress"&gt;
+  &lt;div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"&gt;25%&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-5" data-clipboard-action="copy" data-clipboard-target="#copy-5" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Height Examples -->
+<h4 class="mt-5">تغییر ارتفاع</h4>
+<p>ما فقط مقدار <code>height</code> را روی <code>.progress</code> تغییر می دهیم، و ارتفاع <code>.progress-bar</code> نیز به طور خودکار تغییر خواهد کرد.</p>
+<ul class="nav nav-tabs nav-tabs-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-31">نتیجه</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-41">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-31">
+		<div class="progress mt-3" style="height: 1px;">
+		  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3" style="height: 20px;">
+		  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-41">
+<div class="position-relative">
+<pre id="copy-2" class="my-3">
+<code class="language-markup" data-lang="html">&lt;div class="progress mt-3" style="height: 1px;"&gt;
+  &lt;div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3" style="height: 20px;"&gt;
+  &lt;div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-2" data-clipboard-action="copy" data-clipboard-target="#copy-2" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Backgrounds Examples -->
+<h4 class="mt-5">پس زمینه</h4>
+<p>از کلاس های مربوط به پس زمینه برای تغییر ظاهر progress bar می توانید استفاده کنید.</p>
+<ul class="nav nav-tabs nav-tabs-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-11">نتیجه</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-12">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-11">
+		<div class="progress">
+		  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-12">
+<div class="position-relative">
+<pre id="copy-6" class="my-3">
+<code class="language-markup" data-lang="html">&lt;div class="progress"&gt;
+  &lt;div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-6" data-clipboard-action="copy" data-clipboard-target="#copy-6" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Multiple bars Examples -->
+<h4 class="mt-5">نوار چندگانه</h4>
+<p>در صورت نیاز می توانید چندین پروگرس بار را در داخل یک پروگرس قرار دهید.</p>
+<ul class="nav nav-tabs nav-tabs-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-3">نتیجه</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-4">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-3">
+		<div class="progress">
+		  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+		  <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+		  <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-4">
+<div class="position-relative">
+<pre id="copy-22" class="my-3">
+<code class="language-markup" data-lang="html">&lt;div class="progress"&gt;
+  &lt;div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+  &lt;div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+  &lt;div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-22" data-clipboard-action="copy" data-clipboard-target="#copy-22" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Striped Examples -->
+<h4 class="mt-5">Striped</h4>
+<p>افزودن <code>.progress-bar-striped</code> به هر <code>.progress-bar</code> برای تغییر پس زمینه بصورت گرادیان</p>
+<ul class="nav nav-tabs nav-tabs-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-5">نتیجه</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-6">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-5">
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mt-3">
+		  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-6">
+<div class="position-relative">
+<pre id="copy-3" class="my-3">
+<code class="language-markup" data-lang="html">&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mt-3"&gt;
+  &lt;div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-3" data-clipboard-action="copy" data-clipboard-target="#copy-3" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Animated stripes -->
+<h4 class="mt-5">Striped متحرک</h4>
+<p>گرادیان می تواند متحرک شود، باید کلاس <code>.progress-bar-animated</code> به <code>.progress-bar</code> اضافه کنید.</p>
+<ul class="nav nav-tabs nav-tabs-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-15">نتیجه</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-16">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-15">
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-16">
+<div class="position-relative">
+<pre id="copy-8" class="my-3">
+<code class="language-markup" data-lang="html">&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-8" data-clipboard-action="copy" data-clipboard-target="#copy-8" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Progress percentage style 1 -->
+<h4 class="mt-5">نمایش درصد نسخه 1</h4>
+<ul class="nav nav-tabs nav-tabs-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-17">نتیجه</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-18">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-17">
+		<h6 class="uppercase">میزان پیشرفت</h6>
+		<div class="progress progress-sm bg-primary bg-opacity-10">
+			<div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+				<span class="progress-percent-simple ms-auto">85%</span>
+			</div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-18">
+<div class="position-relative">
+<pre id="copy-9" class="my-3">
+<code class="language-markup" data-lang="html">&lt;h6 class="uppercase"&gt;میزان پیشرفت&lt;/h6&gt;
+&lt;div class="progress progress-sm bg-primary bg-opacity-10"&gt;
+	&lt;div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"&gt;
+		&lt;span class="progress-percent-simple ms-auto"&gt;85%&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-9" data-clipboard-action="copy" data-clipboard-target="#copy-9" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Progress percentage style -->
+<h4 class="mt-5">نمایش درصد نسخه 2</h4>
+<ul class="nav nav-tabs nav-tabs-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-19">نتیجه</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-20">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-19">
+		<p class="mb-1 mt-3 text-dark">میزان پیشرفت</p>
+		<div class="progress progress-percent-bg">
+		  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="progress-percent">80%</span></div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-20">
+<div class="position-relative">
+<pre id="copy-9" class="my-3">
+<code class="language-markup" data-lang="html">&lt;p class="mb-1 mt-3 text-dark"&gt;میزان پیشرفت&lt;/p&gt;
+&lt;div class="progress progress-percent-bg"&gt;
+  &lt;div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"&gt;&lt;span class="progress-percent"&gt;80%&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-9" data-clipboard-action="copy" data-clipboard-target="#copy-9" class="copy-link btn btn-primary btn-sm">کپی</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Page content END -->	
+				</div>
+			</div>
+		</div>
+		<!-- Main content END -->
+	</div>
+</div>
+</main>
+
+<!-- =======================
+JavaScripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/simple-scrollbar.min.js"></script>
+<script src="assets/js/prism.js"></script>
+<script src="assets/js/clipboard.min.js"></script>
+ 
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+
+</html>
