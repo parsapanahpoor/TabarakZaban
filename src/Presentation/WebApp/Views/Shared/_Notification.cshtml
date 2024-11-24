@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Html
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        ShowMessage("اعلان", "@(new HtmlString(TempData["SuccessMessage"] as string))", "success");
+    </script>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <script>
+        ShowMessage("خطا", "@(new HtmlString(TempData["ErrorMessage"] as string))", "error");
+    </script>
+}
+
+@if (TempData["InfoMessage"] != null)
+{
+    <script>
+        ShowMessage("اعلان", "@(new HtmlString(TempData["InfoMessage"] as string))", "info");
+    </script>
+}
+
+@if (TempData["WarningMessage"] != null)
+{
+    <script>
+        ShowMessage("هشدار", "@(new HtmlString(TempData["WarningMessage"] as string))", "warning");
+    </script>
+}
