@@ -6,4 +6,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Framework\Application\Framework.Application.DependencyInjection\Framework.Application.DependencyInjection.csproj" />
+		<ProjectReference Include="..\..\Framework\Application\Framework.Application.Shared\Framework.Application.Shared.csproj" />
+		<ProjectReference Include="..\..\Framework\Domain\Framework.Domain.DependencyInjection\Framework.Domain.DependencyInjection.csproj" />
+		<ProjectReference Include="..\..\Framework\Infrastructure\Persistence\Framework.Persistence.Context\Framework.Persistence.Context.csproj" />
+		<ProjectReference Include="..\..\Framework\Infrastructure\Persistence\Framework.Persistence.DependencyInjection\Framework.Persistence.DependencyInjection.csproj" />
+		<ProjectReference Include="..\..\Module\IdentityModule\Identity.Core\Identity.Core.csproj" />
+		<ProjectReference Include="..\..\Module\IdentityModule\Identity.DependencyInjection\Identity.DependencyInjection.csproj" />
+		<ProjectReference Include="..\..\Module\IdentityModule\Identity.Infrastructure\Identity.Infrastructure.csproj" />
+		<ProjectReference Include="..\..\Module\IdentityModule\Identity.Persistence\Identity.Persistence.csproj" />
+		<ProjectReference Include="..\..\Shared\SharedProject\SharedProject.csproj" />
+	</ItemGroup>
+	
 </Project>

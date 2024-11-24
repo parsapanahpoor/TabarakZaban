@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Framework.Persistence.Context.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241112065616_Add-Organization-Table")]
-    partial class AddOrganizationTable
+    [Migration("20241124103946_Initial-DataBase")]
+    partial class InitialDataBase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -268,57 +268,6 @@ namespace Framework.Persistence.Context.Migrations
                     b.ToTable("RefreshTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Organization.Domain.Organization.Aggregate.OrganizationAggregate", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("BlockDescription")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("OrganizationActivationState")
-                        .HasColumnType("int");
-
-                    b.Property<string>("OwnerUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OwnerUserId");
-
-                    b.ToTable("Organizations", (string)null);
-                });
-
-            modelBuilder.Entity("Organization.Domain.Organization.Aggregate.OrganizationMember", b =>
-                {
-                    b.Property<decimal>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("decimal(20,0)");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<decimal>("Id"));
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<Guid>("MemberUserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("OrganizationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrganizationId");
-
-                    b.ToTable("OrganizationMembers", (string)null);
-                });
-
             modelBuilder.Entity("Identity.Domain.Entities.ApplicationRoleClaim", b =>
                 {
                     b.HasOne("Identity.Domain.Entities.ApplicationRole", "Role")
@@ -397,28 +346,6 @@ namespace Framework.Persistence.Context.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Organization.Domain.Organization.Aggregate.OrganizationAggregate", b =>
-                {
-                    b.HasOne("Identity.Domain.Entities.ApplicationUser", "OwnerUser")
-                        .WithMany()
-                        .HasForeignKey("OwnerUserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("OwnerUser");
-                });
-
-            modelBuilder.Entity("Organization.Domain.Organization.Aggregate.OrganizationMember", b =>
-                {
-                    b.HasOne("Organization.Domain.Organization.Aggregate.OrganizationAggregate", "Organization")
-                        .WithMany("OrganizationMembers")
-                        .HasForeignKey("OrganizationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Organization");
-                });
-
             modelBuilder.Entity("Identity.Domain.Entities.ApplicationRole", b =>
                 {
                     b.Navigation("RoleClaims");
@@ -437,11 +364,6 @@ namespace Framework.Persistence.Context.Migrations
                     b.Navigation("Tokens");
 
                     b.Navigation("UserRoles");
-                });
-
-            modelBuilder.Entity("Organization.Domain.Organization.Aggregate.OrganizationAggregate", b =>
-                {
-                    b.Navigation("OrganizationMembers");
                 });
 #pragma warning restore 612, 618
         }

@@ -25,55 +25,6 @@ namespace Framework.Persistence.Context.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BaseInformation.Domain.VehicleCategory.Aggregate.VehicleCategoryAggregate", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CreatedByIp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTimeOffset?>("CreatedDateTime")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("ModifiedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ModifiedByIp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTimeOffset?>("ModifiedDateTime")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<Guid?>("ParentId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("ParentPath")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ParentPath");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ParentId");
-
-                    b.ToTable("VehicleCategories", (string)null);
-                });
-
             modelBuilder.Entity("Identity.Domain.Entities.ApplicationRole", b =>
                 {
                     b.Property<string>("Id")
@@ -314,88 +265,6 @@ namespace Framework.Persistence.Context.Migrations
                     b.ToTable("RefreshTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Organization.Domain.Organization.Aggregate.OrganizationAggregate", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("BlockDescription")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CreatedByIp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTimeOffset?>("CreatedDateTime")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("ModifiedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ModifiedByIp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTimeOffset?>("ModifiedDateTime")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<int>("OrganizationActivationState")
-                        .HasColumnType("int");
-
-                    b.Property<string>("OrganizationName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("OwnerUserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OwnerUserId");
-
-                    b.ToTable("Organizations", (string)null);
-                });
-
-            modelBuilder.Entity("Organization.Domain.Organization.Aggregate.OrganizationMemberEntity", b =>
-                {
-                    b.Property<decimal>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("decimal(20,0)");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<decimal>("Id"));
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("MemberUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("OrganizationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrganizationId");
-
-                    b.ToTable("OrganizationMembers", (string)null);
-                });
-
-            modelBuilder.Entity("BaseInformation.Domain.VehicleCategory.Aggregate.VehicleCategoryAggregate", b =>
-                {
-                    b.HasOne("BaseInformation.Domain.VehicleCategory.Aggregate.VehicleCategoryAggregate", "Parent")
-                        .WithMany("ChildCategories")
-                        .HasForeignKey("ParentId")
-                        .OnDelete(DeleteBehavior.Restrict);
-
-                    b.Navigation("Parent");
-                });
-
             modelBuilder.Entity("Identity.Domain.Entities.ApplicationRoleClaim", b =>
                 {
                     b.HasOne("Identity.Domain.Entities.ApplicationRole", "Role")
@@ -474,32 +343,6 @@ namespace Framework.Persistence.Context.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Organization.Domain.Organization.Aggregate.OrganizationAggregate", b =>
-                {
-                    b.HasOne("Identity.Domain.Entities.ApplicationUser", "OwnerUser")
-                        .WithMany()
-                        .HasForeignKey("OwnerUserId")
-                        .OnDelete(DeleteBehavior.Restrict);
-
-                    b.Navigation("OwnerUser");
-                });
-
-            modelBuilder.Entity("Organization.Domain.Organization.Aggregate.OrganizationMemberEntity", b =>
-                {
-                    b.HasOne("Organization.Domain.Organization.Aggregate.OrganizationAggregate", "Organization")
-                        .WithMany("OrganizationMembers")
-                        .HasForeignKey("OrganizationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Organization");
-                });
-
-            modelBuilder.Entity("BaseInformation.Domain.VehicleCategory.Aggregate.VehicleCategoryAggregate", b =>
-                {
-                    b.Navigation("ChildCategories");
-                });
-
             modelBuilder.Entity("Identity.Domain.Entities.ApplicationRole", b =>
                 {
                     b.Navigation("RoleClaims");
@@ -518,11 +361,6 @@ namespace Framework.Persistence.Context.Migrations
                     b.Navigation("Tokens");
 
                     b.Navigation("UserRoles");
-                });
-
-            modelBuilder.Entity("Organization.Domain.Organization.Aggregate.OrganizationAggregate", b =>
-                {
-                    b.Navigation("OrganizationMembers");
                 });
 #pragma warning restore 612, 618
         }
