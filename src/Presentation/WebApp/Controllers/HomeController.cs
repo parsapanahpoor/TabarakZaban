@@ -1,11 +1,13 @@
+using Account.Controllers;
 using Microsoft.AspNetCore.Mvc;
+using WebApp.HttpManager;
 
 namespace WebApp.Controllers;
 
-public class HomeController : Controller
+public class HomeController : SiteBaseController
 {
-	public IActionResult Index()
-	{
-		return View();
-	}
+	[HttpGet("LoginRegister")]
+	[RedirectHomeIfLoggedInActionFilter]
+	public IActionResult LoginRegister(LoginRegisterDto model)
+	=> View(model);
 }
