@@ -1,0 +1,184 @@
+﻿@model Identity.Application.User.Commands.LoginWithCode.LoginByCodeDto
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <title>Eduport - قالب HTML دوره آنلاین و آموزش</title>
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <meta name="description" content="Eduport - قالب HTML دوره آنلاین و آموزش">
+
+    <!-- Dark mode -->
+    <script>
+        const storedTheme = localStorage.getItem('theme')
+
+        const getPreferredTheme = () => {
+            if (storedTheme) {
+                return storedTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        }
+
+        const setTheme = function (theme) {
+            if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-bs-theme', 'dark')
+            } else {
+                document.documentElement.setAttribute('data-bs-theme', theme)
+            }
+        }
+
+        setTheme(getPreferredTheme())
+
+        window.addEventListener('DOMContentLoaded', () => {
+            var el = document.querySelector('.theme-icon-active');
+            if (el != 'undefined' && el != null) {
+                const showActiveTheme = theme => {
+                    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+                    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+                    const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+                    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                        element.classList.remove('active')
+                    })
+
+                    btnToActive.classList.add('active')
+                    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+                }
+
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                    if (storedTheme !== 'light' || storedTheme !== 'dark') {
+                        setTheme(getPreferredTheme())
+                    }
+                })
+
+                showActiveTheme(getPreferredTheme())
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', () => {
+                            const theme = toggle.getAttribute('data-bs-theme-value')
+                            localStorage.setItem('theme', theme)
+                            setTheme(theme)
+                            showActiveTheme(theme)
+                        })
+                    })
+
+            }
+        })
+
+    </script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/SiteTemplate/assets/images/favicon.ico">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css" href="/SiteTemplate/assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/SiteTemplate/assets/vendor/bootstrap-icons/bootstrap-icons.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="/SiteTemplate/assets/css/style-rtl.css">
+
+</head>
+
+<body>
+
+    <!-- **************** MAIN CONTENT START **************** -->
+    <main>
+        <section class="p-0 d-flex align-items-center position-relative overflow-hidden">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left -->
+                    <div class="col-12 col-lg-6 d-md-flex align-items-center justify-content-center bg-primary bg-opacity-10 vh-lg-100">
+                        <div class="p-3 p-lg-5">
+                            <!-- Title -->
+                            <div class="text-center">
+                                <h2 class="fw-bold fs-3">به بزرگترین انجمن ما خوش آمدید</h2>
+                                <p class="mb-0 h6 fw-light">بیایید امروز چیز جدیدی یاد بگیریم!</p>
+                            </div>
+                            <!-- SVG Image -->
+                            <img src="/SiteTemplate/assets/images/element/02.svg" class="mt-5" alt="">
+                            <!-- Info -->
+                            <div class="d-sm-flex mt-5 align-items-center justify-content-center">
+                                <!-- Avatar group -->
+                                <ul class="avatar-group mb-2 mb-sm-0">
+                                    <li class="avatar avatar-sm">
+                                        <img class="avatar-img rounded-circle" src="/SiteTemplate/assets/images/avatar/01.jpg" alt="avatar">
+                                    </li>
+                                    <li class="avatar avatar-sm">
+                                        <img class="avatar-img rounded-circle" src="/SiteTemplate/assets/images/avatar/02.jpg" alt="avatar">
+                                    </li>
+                                    <li class="avatar avatar-sm">
+                                        <img class="avatar-img rounded-circle" src="/SiteTemplate/assets/images/avatar/03.jpg" alt="avatar">
+                                    </li>
+                                    <li class="avatar avatar-sm">
+                                        <img class="avatar-img rounded-circle" src="/SiteTemplate/assets/images/avatar/04.jpg" alt="avatar">
+                                    </li>
+                                </ul>
+                                <!-- Content -->
+                                <p class="mb-0 h6 fw-light ms-0 ms-sm-3"> بیش از 100 دانشجو به ما پیوستند، حالا نوبت شماست.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <div class="row my-5">
+                            <div class="col-sm-10 col-xl-12 m-auto">
+
+                                <!-- Title -->
+                                <span class="mb-0 fs-1">🤔</span>
+                                <h1 class="fs-4">کد ارسال شده</h1>
+                                <h5 class="fw-light mb-4">برای ورود به سایت لطفا کد ارسال شده به شماره موبایل وارد شده را وارد کنید.</h5>
+
+                                <!-- Form START -->
+                                <form asp-action="LoginWithCode"
+                                      asp-area=""
+                                      asp-controller="Account"
+                                      method="post">
+
+                                    <input type="hidden" asp-for="Mobile" value=@ViewBag.Mobile />
+
+                                    <!-- Email -->
+                                    <div class="mb-4">
+                                        <label for="exampleInputEmail1" class="form-label">کد ارسالی *</label>
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i class="bi bi-envelope-fill"></i></span>
+                                            <input asp-for="MobileActiveCode" type="text" class="form-control border-0 bg-light rounded-end ps-1" id="exampleInputEmail1">
+                                        </div>
+                                    </div>
+                                    <!-- Button -->
+                                    <div class="align-items-center">
+                                        <div class="d-grid">
+                                            <button class="btn btn-primary mb-0" type="submit">ارسال </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- Form END -->
+                            </div>
+                        </div> <!-- Row END -->
+                    </div>
+                </div> <!-- Row END -->
+            </div>
+        </section>
+    </main>
+    <!-- **************** MAIN CONTENT END **************** -->
+    <!-- Back to top -->
+    <div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
+
+    <!-- Bootstrap JS -->
+    <script src="/SiteTemplate/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Functions -->
+    <script src="/SiteTemplate/assets/js/functions.js"></script>
+
+</body>
+
+</html>

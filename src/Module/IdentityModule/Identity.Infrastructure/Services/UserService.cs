@@ -9,31 +9,10 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using Framework.Infrastructure.Shared.TokenOption;
 using Identity.Application;
-using Microsoft.Extensions.Logging;
 
 namespace Identity.Infrastructure.Services;
 
-public class UserService(
-	IHttpContextAccessor httpContextAccessor,
-	UserManager<ApplicationUser> userManager,
-	IOptions<ApplicationTokenOption> tokenOptions,
-	IUserStore<ApplicationUser> userStore,
-	IOptions<IdentityOptions> identityOptions,
-	IPasswordHasher<ApplicationUser> passwordHasher,
-	IEnumerable<IUserValidator<ApplicationUser>> userValidators,
-	IEnumerable<IPasswordValidator<ApplicationUser>> passwordValidators,
-	ILookupNormalizer keyNormalizer,
-	IdentityErrorDescriber errors,
-	IServiceProvider services,
-	ILogger<UserManager<ApplicationUser>> logger)
-	: base(userStore, identityOptions, passwordHasher, userValidators, passwordValidators, keyNormalizer, errors, services, logger)
-{
-	_httpContextAccessor = httpContextAccessor;
-	_userManager = userManager;
-	_tokenOptions = tokenOptions.Value;
-}
-
-public class UserService : UserManager<ApplicationUser>  , IUserService 
+public class UserService : IUserService
 {
     private readonly IHttpContextAccessor _httpContextAccessor;
     private readonly UserManager<ApplicationUser> _userManager;
