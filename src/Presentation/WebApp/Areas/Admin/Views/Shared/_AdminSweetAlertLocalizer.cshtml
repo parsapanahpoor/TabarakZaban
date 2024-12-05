@@ -1,0 +1,34 @@
+﻿
+
+    <script>
+     function DeleteAjax(removeElementId, url) {
+        Swal.fire({
+            title: 'Sweet Alert Announcement',
+            text: "Sweet Alert Question",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sweet Alert Yes Answer',
+            cancelButtonText: 'Sweet Alert No Answer',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.get(url).then(res => {
+                    if (removeElementId !== null &&
+                        removeElementId !== undefined &&
+                        removeElementId !== '' &&
+                        res.status === "Success") {
+                        ShowMessage("Sweet Alert Announcement", "Sweet Alert Success Message", "success");
+                        $('[remove-ajax-item=' + removeElementId + ']').fadeOut(1000);
+                    } else if (removeElementId !== null &&
+                        removeElementId !== undefined &&
+                        removeElementId !== '' &&
+                        res.status === "Error") {
+                        ShowMessage("Sweet Alert Announcement", "Sweet Alert Failed Message", "error");
+                    }
+                });
+            }
+        });
+    }
+</script>
+

@@ -9,7 +9,7 @@ public class ApplicationUser : Microsoft.AspNetCore.Identity.IdentityUser
 
     public virtual List<RefreshTokenEntity> RefreshTokens { get; set; } = [];
 	public string? ActivationCode { get; set; }
-	public bool IsBan { get; set; } = false;
+    public string? UserAvatar { get; set; }
+    public bool IsBan { get; set; } = false;
 	public bool IsAdmin { get; set; } = false;
-	public DateTime? ExpireMobileSMSDateTime { get; set; }
 }

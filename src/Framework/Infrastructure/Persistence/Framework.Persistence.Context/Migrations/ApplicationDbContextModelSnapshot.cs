@@ -99,9 +99,6 @@ namespace Framework.Persistence.Context.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime?>("ExpireMobileSMSDateTime")
-                        .HasColumnType("datetime2");
-
                     b.Property<bool>("IsAdmin")
                         .HasColumnType("bit");
 
@@ -136,6 +133,9 @@ namespace Framework.Persistence.Context.Migrations
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
+
+                    b.Property<string>("UserAvatar")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserName")
                         .HasMaxLength(256)

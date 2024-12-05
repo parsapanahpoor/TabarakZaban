@@ -65,6 +65,11 @@ public class EfRepository<TEntity> : IRepository<TEntity> where TEntity : class
         return await GetAllAsync<TResult>(query, cancellationToken);
     }
 
+    public IQueryable<TEntity> GetAllQueryable()
+    {
+        return DbSet.AsNoTracking().AsQueryable();
+    }
+
     public async Task<int> GetTotalAsync(IQueryParameter queryParameter, CancellationToken cancellationToken)
     {
         return await DbSet.AsNoTrackingWithIdentityResolution().CountAsync(cancellationToken);

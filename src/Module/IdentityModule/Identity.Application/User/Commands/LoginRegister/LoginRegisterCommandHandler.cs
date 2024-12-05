@@ -27,7 +27,6 @@ public record LoginRegisterCommandHandler(
 				UserName = request.data.Mobile.Trim().ToLower(),
 				PhoneNumber = request.data.Mobile.Trim().ToLower(),
 				ActivationCode = new Random().Next(10000, 999999).ToString(),
-				ExpireMobileSMSDateTime = DateTime.Now
 			};
 
 			var res = await userManager.CreateAsync(applicationUser, PasswordHasher.EncodePasswordMd5(request.data.Mobile));

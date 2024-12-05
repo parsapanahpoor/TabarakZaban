@@ -28,7 +28,6 @@ public record LoginWithCodeQueryHandler(
 		if (request.Resend)
 		{
 			user.ActivationCode = new Random().Next(10000, 999999).ToString();
-			user.ExpireMobileSMSDateTime = DateTime.Now;
 
 			await unitOfWork.SaveChangesAsync();
 

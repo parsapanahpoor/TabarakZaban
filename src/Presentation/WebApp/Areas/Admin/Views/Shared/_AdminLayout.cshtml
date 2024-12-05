@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+
+    <partial name="_AdminMetaTags" />
+    <partial name="_AdminHeaderReferences" />
+
+    @await RenderSectionAsync("Styles", false)
+        
+</head>
+<body>
+    @await Component.InvokeAsync("AdminHeader")
+
+    <div class="main-container container-fluid">
+        <div class="page-container ">
+
+            @await Component.InvokeAsync("AdminSideBar")
+
+            <div class="page-content">
+                
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a asp-area="Admin" asp-controller="Home" asp-action="Index">خانه</a>
+                        </li>
+
+                        @RenderSection("breadcrumb", false)
+
+                    </ul>
+                </div>
+
+                <partial name="_AdminPageHeader" />
+
+                <div class="page-body">
+
+                    @RenderBody()
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <partial name="_AdminFooterReferences" />
+
+    <partial name="_Notification" />
+
+    <partial name="_Modals" />
+
+    @await RenderSectionAsync("Scripts", false)
+
+</body>
+</html>

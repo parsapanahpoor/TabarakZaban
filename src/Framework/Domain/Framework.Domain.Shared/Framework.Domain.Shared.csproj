@@ -10,6 +10,8 @@
 		<PackageReference Include="AutoMapper" />
 		<PackageReference Include="FluentValidation" />
 		<PackageReference Include="MediatR" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Features" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" />
 	</ItemGroup>
 
 	<ItemGroup>

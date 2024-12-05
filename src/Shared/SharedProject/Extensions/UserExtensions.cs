@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using SharedProject.StaticTools;
+using System.Security.Claims;
 using System.Security.Principal;
 
 
@@ -32,6 +33,14 @@ namespace SharedProject.Application.Extensions
             var user = (ClaimsPrincipal)principal;
 
             return user.GetUsername();
+        }
+
+        public static string GetUserAvatar(this string? userAvatar)
+        {
+            if (!string.IsNullOrEmpty(userAvatar))
+                return Path.Combine(PathTools.UserAvatarPathThumb, userAvatar);
+
+            return PathTools.DefaultUserAvatar;
         }
     }
 }

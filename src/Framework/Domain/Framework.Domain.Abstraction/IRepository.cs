@@ -15,6 +15,7 @@ public interface IRepository<TEntity> where TEntity : class
     public Task<List<TResult>> GetAllAsync<TResult>(IQueryable<TEntity> query, CancellationToken cancellationToken);
     public Task<List<TResult>> GetAllAsync<TResult>(IQueryParameter queryParameter, CancellationToken cancellationToken);
     public Task<List<TResult>> GetAllAsync<TResult>(Expression<Func<TEntity, bool>> wherePredicate, CancellationToken cancellationToken);
+    IQueryable<TEntity> GetAllQueryable();
 
     public Task<int> GetTotalAsync(IQueryParameter queryParameter, CancellationToken cancellationToken);
     
