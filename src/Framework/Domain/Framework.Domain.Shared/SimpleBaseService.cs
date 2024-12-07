@@ -6,7 +6,6 @@ namespace Framework.Domain.Shared;
 public class SimpleBaseService<TAggregate, TModel>(IMapper mapper, IValidator<TAggregate> validator) :
     SimpleBaseService<TAggregate, TModel, TModel>(mapper, validator),
     ISimpleBaseService<TAggregate, TModel>
-    where TAggregate : IAggregateRoot
     where TModel : class
 {
     private readonly IMapper _mapper = mapper;
@@ -30,7 +29,6 @@ public class SimpleBaseService<TAggregate, TModel>(IMapper mapper, IValidator<TA
 
 public class SimpleBaseService<TAggregate, TCreateModel, TUpdateModel>(IMapper mapper, IValidator<TAggregate> validator) :
     ISimpleBaseService<TAggregate, TCreateModel, TUpdateModel>
-    where TAggregate : IAggregateRoot
     where TCreateModel : class
     where TUpdateModel : class
 {

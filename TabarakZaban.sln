@@ -28,49 +28,53 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{0C8A77B2-6714-4548-9884-1D9DB40AEE3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Application.DependencyInjection", "src\Framework\Application\Framework.Application.DependencyInjection\Framework.Application.DependencyInjection.csproj", "{494C942C-997C-4311-B3A5-3DD19D412551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Application.DependencyInjection", "src\Framework\Application\Framework.Application.DependencyInjection\Framework.Application.DependencyInjection.csproj", "{494C942C-997C-4311-B3A5-3DD19D412551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Application.Shared", "src\Framework\Application\Framework.Application.Shared\Framework.Application.Shared.csproj", "{47ACBC06-3847-4DBA-9349-B29BBDF83DBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Application.Shared", "src\Framework\Application\Framework.Application.Shared\Framework.Application.Shared.csproj", "{47ACBC06-3847-4DBA-9349-B29BBDF83DBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Application.Abstraction", "src\Framework\Application\Framework.Application.Abstraction\Framework.Application.Abstraction.csproj", "{D93CD761-5C6A-47F9-A6D5-DC9B52740A57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Application.Abstraction", "src\Framework\Application\Framework.Application.Abstraction\Framework.Application.Abstraction.csproj", "{D93CD761-5C6A-47F9-A6D5-DC9B52740A57}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A2AA8669-1C67-4804-A37A-7125D418353C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{88B523B8-26CA-4704-BCC6-8E0E043A8665}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Infrastructure.Shared", "src\Framework\Infrastructure\Framework.Infrastructure.Shared\Framework.Infrastructure.Shared.csproj", "{D0CCE9AD-F77E-45A3-928B-A55B815E853E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Infrastructure.Shared", "src\Framework\Infrastructure\Framework.Infrastructure.Shared\Framework.Infrastructure.Shared.csproj", "{D0CCE9AD-F77E-45A3-928B-A55B815E853E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Persistence.DependencyInjection", "src\Framework\Infrastructure\Persistence\Framework.Persistence.DependencyInjection\Framework.Persistence.DependencyInjection.csproj", "{DDC57E99-2E09-4657-95AA-B69C214DDA91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Persistence.DependencyInjection", "src\Framework\Infrastructure\Persistence\Framework.Persistence.DependencyInjection\Framework.Persistence.DependencyInjection.csproj", "{DDC57E99-2E09-4657-95AA-B69C214DDA91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Persistence.Context", "src\Framework\Infrastructure\Persistence\Framework.Persistence.Context\Framework.Persistence.Context.csproj", "{FBC8D209-9E7C-4623-8D62-141EA1B614F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Persistence.Context", "src\Framework\Infrastructure\Persistence\Framework.Persistence.Context\Framework.Persistence.Context.csproj", "{FBC8D209-9E7C-4623-8D62-141EA1B614F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Persistence.Shared", "src\Framework\Infrastructure\Persistence\Framework.Persistence.Shared\Framework.Persistence.Shared.csproj", "{D9952B4E-5713-4D3D-A08A-1C82169178C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Persistence.Shared", "src\Framework\Infrastructure\Persistence\Framework.Persistence.Shared\Framework.Persistence.Shared.csproj", "{D9952B4E-5713-4D3D-A08A-1C82169178C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B66B130F-FA8C-4E35-9BA2-5102D3FAB97F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Presentation.Shared", "src\Framework\Presentation\Framework.Presentation.Shared\Framework.Presentation.Shared.csproj", "{208B52CD-E35F-40EA-927D-0E2205579868}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Presentation.Shared", "src\Framework\Presentation\Framework.Presentation.Shared\Framework.Presentation.Shared.csproj", "{208B52CD-E35F-40EA-927D-0E2205579868}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{78E2F691-6454-4EEC-B80F-79FAEA7D00BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "src\Presentation\WebApp\WebApp.csproj", "{060FDB75-A26C-4F2E-9569-68F2D9F47268}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "src\Presentation\WebApp\WebApp.csproj", "{060FDB75-A26C-4F2E-9569-68F2D9F47268}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{AD50B2EA-F9DE-467C-BCF7-C78FE0C67D46}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityModule", "IdentityModule", "{3DC29992-43C5-4880-85E8-1EF57070EB6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Domain", "src\Module\IdentityModule\Identity.Domain\Identity.Domain.csproj", "{8FBBD1F5-5E8A-482A-88FF-86A9E71DE79E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Domain", "src\Module\IdentityModule\Identity.Domain\Identity.Domain.csproj", "{8FBBD1F5-5E8A-482A-88FF-86A9E71DE79E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Application", "src\Module\IdentityModule\Identity.Application\Identity.Application.csproj", "{4BDEEE8C-592B-425F-8D25-E92037EC2C22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Application", "src\Module\IdentityModule\Identity.Application\Identity.Application.csproj", "{4BDEEE8C-592B-425F-8D25-E92037EC2C22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Core", "src\Module\IdentityModule\Identity.Core\Identity.Core.csproj", "{07FDD21C-CFD6-4EBF-9D9F-42B17C274507}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Core", "src\Module\IdentityModule\Identity.Core\Identity.Core.csproj", "{07FDD21C-CFD6-4EBF-9D9F-42B17C274507}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.DependencyInjection", "src\Module\IdentityModule\Identity.DependencyInjection\Identity.DependencyInjection.csproj", "{FD6B9FE2-A71B-42C4-9BAE-490624C123C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.DependencyInjection", "src\Module\IdentityModule\Identity.DependencyInjection\Identity.DependencyInjection.csproj", "{FD6B9FE2-A71B-42C4-9BAE-490624C123C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Infrastructure", "src\Module\IdentityModule\Identity.Infrastructure\Identity.Infrastructure.csproj", "{8334BE71-1E33-4CFC-B301-CA49F24F1DAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Infrastructure", "src\Module\IdentityModule\Identity.Infrastructure\Identity.Infrastructure.csproj", "{8334BE71-1E33-4CFC-B301-CA49F24F1DAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Persistence", "src\Module\IdentityModule\Identity.Persistence\Identity.Persistence.csproj", "{349BCE39-CEC8-41C9-9CDC-0FB69F5B4E85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Persistence", "src\Module\IdentityModule\Identity.Persistence\Identity.Persistence.csproj", "{349BCE39-CEC8-41C9-9CDC-0FB69F5B4E85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Presentation", "src\Module\IdentityModule\Identity.Presentation\Identity.Presentation.csproj", "{67866D1C-DFBE-446A-86FF-18A784ECBA68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Presentation", "src\Module\IdentityModule\Identity.Presentation\Identity.Presentation.csproj", "{67866D1C-DFBE-446A-86FF-18A784ECBA68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Course", "Course", "{335F82F1-BDAC-47E4-B5F1-1E4658D605A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.Domain", "src\Module\CourseModule\Course.Domain\Course.Domain.csproj", "{B7A0D9EE-6CB9-4CFC-ADD5-980FC8E6CCB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -158,6 +162,10 @@ Global
 		{67866D1C-DFBE-446A-86FF-18A784ECBA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67866D1C-DFBE-446A-86FF-18A784ECBA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67866D1C-DFBE-446A-86FF-18A784ECBA68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7A0D9EE-6CB9-4CFC-ADD5-980FC8E6CCB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7A0D9EE-6CB9-4CFC-ADD5-980FC8E6CCB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7A0D9EE-6CB9-4CFC-ADD5-980FC8E6CCB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7A0D9EE-6CB9-4CFC-ADD5-980FC8E6CCB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,6 +201,8 @@ Global
 		{8334BE71-1E33-4CFC-B301-CA49F24F1DAD} = {3DC29992-43C5-4880-85E8-1EF57070EB6F}
 		{349BCE39-CEC8-41C9-9CDC-0FB69F5B4E85} = {3DC29992-43C5-4880-85E8-1EF57070EB6F}
 		{67866D1C-DFBE-446A-86FF-18A784ECBA68} = {3DC29992-43C5-4880-85E8-1EF57070EB6F}
+		{335F82F1-BDAC-47E4-B5F1-1E4658D605A0} = {AD50B2EA-F9DE-467C-BCF7-C78FE0C67D46}
+		{B7A0D9EE-6CB9-4CFC-ADD5-980FC8E6CCB2} = {335F82F1-BDAC-47E4-B5F1-1E4658D605A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5E7DE86-D3DB-4893-B001-56CECFAB18D5}

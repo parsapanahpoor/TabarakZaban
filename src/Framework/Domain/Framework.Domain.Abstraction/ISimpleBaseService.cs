@@ -3,7 +3,6 @@ using SharedProject;
 namespace Framework.Domain.Abstraction;
 
 public interface ISimpleBaseService<TAggregate, in TModel>
-    where TAggregate : IAggregateRoot
     where TModel : class 
 {
     Task<Result<TAggregate>> Create(TModel data, CancellationToken cancellationToken); 
@@ -12,7 +11,6 @@ public interface ISimpleBaseService<TAggregate, in TModel>
 }
 
 public interface ISimpleBaseService<TAggregate, in TCreateModel, in TUpdateModel>
-    where TAggregate : IAggregateRoot
     where TCreateModel : class
     where TUpdateModel : class 
 {
